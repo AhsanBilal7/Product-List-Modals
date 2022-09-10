@@ -25,8 +25,8 @@ function Main() {
   const [name, setName] = useState("Shoes");
   const [productValue, setProductType] = useReducer(action, shoes);
   const data = useContext(contextapp);
-  const [modalVariable , setModalVariable] =useState({})
-  const [modalFlag , setModalFlag] =useState(false)
+  const [modalVariable, setModalVariable] = useState({});
+  const [modalFlag, setModalFlag] = useState(false);
 
   // console.log(data);
   // Apicall();
@@ -34,7 +34,6 @@ function Main() {
     console.log("Component is clicked", index);
     // setModalVariable(arr);
     // setModalFlag(true)
-   
   };
   return (
     <>
@@ -65,25 +64,26 @@ function Main() {
           </div>
           <h3>list of {name} are given below: </h3>
           <div className={main.containerMain}>
-            {modalFlag ? "":
-              productValue.map((arr, index) => {
-              return (
-                <>
-                <a href={`/profilepage/${name}/${index}`}>
-                  {console.log(arr)}
-                  <div
-                    onClick={() => clickComp(arr, index)}
-                    className={main.containerItem}
-                  >
-                    <ProductCard value={arr} />
-                  </div>
-                </a>
-                </>
-              );
-            })}
+            {modalFlag
+              ? ""
+              : productValue.map((arr, index) => {
+                  return (
+                    <>
+                      <a href={`/profilepage/${name}/${index}`}>
+                        {console.log(arr)}
+                        <div
+                          onClick={() => clickComp(arr, index)}
+                          className={main.containerItem}
+                        >
+                          <ProductCard value={arr} />
+                        </div>
+                      </a>
+                    </>
+                  );
+                })}
           </div>
           {/* <p>This is Paragraph </p> */}
-         {/* {modalFlag ? <ProfileCard setModalFlag={setModalFlag} value={modalVariable} /> : "" }  */}
+          {/* {modalFlag ? <ProfileCard setModalFlag={setModalFlag} value={modalVariable} /> : "" }  */}
         </div>
       </div>
     </>

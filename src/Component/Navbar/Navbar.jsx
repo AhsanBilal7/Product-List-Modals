@@ -19,8 +19,8 @@ export default function Navbar() {
 
   return (
     <>
-      <MDBNavbar className={navbar.containerNav} expand="lg" >
-        <MDBContainer  fluid>
+      <MDBNavbar className={navbar.containerNav} expand="lg">
+        <MDBContainer fluid>
           <MDBNavbarToggler
             type="button"
             data-target="#navbarTogglerDemo03"
@@ -35,14 +35,18 @@ export default function Navbar() {
           <MDBCollapse navbar show={showNavNoTogglerThird}>
             <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page"  href="/main">
+                <MDBNavbarLink active aria-current="page" href="/main">
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink target="_blank" href="https://github.com/AhsanBilal7">My Github</MDBNavbarLink>
+                <MDBNavbarLink
+                  target="_blank"
+                  href="https://github.com/AhsanBilal7"
+                >
+                  My Github
+                </MDBNavbarLink>
               </MDBNavbarItem>
-              
             </MDBNavbarNav>
             <MDBInputGroup tag="form" className="d-flex w-auto ">
               <div className={navbar.inputNav}>
@@ -52,7 +56,7 @@ export default function Navbar() {
                   aria-label="Search"
                   type="Search"
                 />
-                <MDBBtn >Search</MDBBtn>
+                <MDBBtn>Search</MDBBtn>
               </div>
             </MDBInputGroup>
           </MDBCollapse>
