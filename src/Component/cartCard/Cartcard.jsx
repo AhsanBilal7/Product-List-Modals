@@ -1,5 +1,5 @@
 import React from "react";
-import product from "./ProductCard.module.css";
+import product from "./cardCard.module.css";
 import {
   MDBContainer,
   MDBRow,
@@ -10,37 +10,8 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 // import imgShoes from '../../pictures/1.jpg'
-function ProductCard(props) {
+function Cartcard(props) {
   const info = props.value;
-  const { cartInfo, setCartInfo, setContextCart ,contextCart} = props;
-  const clickCart = (event) => {
-    console.log(contextCart);
-    event.preventDefault();
-    alert("Added to Cart");
-    
-    setContextCart((items) =>[...items , info] )
-    setContextCart((items) =>{
-
-      const uniqueNames = [];
-  
-      const unique = items.filter(element => {
-        console.log("This is element",element)
-        const isDuplicate = uniqueNames.includes(element.productName);
-        
-        if (!isDuplicate) {
-          uniqueNames.push(element.productName);
-          
-          return true;
-        }
-        
-        return false;
-      });
-      return (unique)
-    } 
-      )
-    // setContextCart([...contextCart, info]);
-    // setCartInfo([...cartInfo, info]);
-  };
   // console.log()
   // console.log(info)
   return (
@@ -84,9 +55,9 @@ function ProductCard(props) {
               <p class="text-muted mb-0">
                 Available: <span class="fw-bold">6</span>
               </p>
-              <button onClick={clickCart} className={product.btnCart}>
+              {/* <button onClick={clickCart} className={product.btnCart}>
                 Add to cart
-              </button>
+              </button> */}
             </div>
             <div class="ms-auto text-warning">
               <MDBIcon fas icon="star" />
@@ -102,4 +73,4 @@ function ProductCard(props) {
   );
 }
 
-export default ProductCard;
+export default Cartcard;

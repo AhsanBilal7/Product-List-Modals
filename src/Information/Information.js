@@ -53,42 +53,56 @@ const products = [
 ]
 const tables = [
     {
-        productName:'Tables0',
+        productName:'name1',
         imgSource : tab['1.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
         productDescription : 'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion'
     },
     {
-        productName:'Tables1',
+        productName:'name2',
         imgSource : tab['2.jpg'],
         productValue : '5.99$',
         tagline: 'Short Catchy Tagline',
         productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Tables2',
+        productName:'name3',
+        imgSource : tab['5.jpg'],
+        productValue : '5.99$',
+        tagline: 'Short Catchy Tagline',
+        productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
+    },
+    {
+        productName:'name4',
+        imgSource : tab['4.jpg'],
+        productValue : '5.99$',
+        tagline: 'Short Catchy Tagline',
+        productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
+    },
+    {
+        productName:'name5',
         imgSource : tab['3.jpg'],
         productValue : '5.99$',
         tagline: 'Short Catchy Tagline',
         productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Tables3',
+        productName:'table6',
         imgSource :tab['4.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
         productDescription : 'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Tables4',
+        productName:'table7',
         imgSource : tab['5.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
         productDescription : 'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Tables5',
+        productName:'table8',
         imgSource : tab['6.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
@@ -98,42 +112,56 @@ const tables = [
 ]
 const chairs = [
     {
-        productName:'Chairs',
+        productName:'Chairs1',
         imgSource : cha['1.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
         productDescription : 'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion'
     },
     {
-        productName:'Chairs',
+        productName:'Chairs2',
         imgSource : cha['2.jpg'],
         productValue : '5.99$',
         tagline: 'Short Catchy Tagline',
         productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Chairs',
+        productName:'Chairs3',
         imgSource : cha['3.jpg'],
         productValue : '5.99$',
         tagline: 'Short Catchy Tagline',
         productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Chairs',
+        productName:'Chairs4',
+        imgSource : cha['4.jpg'],
+        productValue : '5.99$',
+        tagline: 'Short Catchy Tagline',
+        productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
+    },
+    {
+        productName:'Chairs5',
+        imgSource : cha['5.jpg'],
+        productValue : '5.99$',
+        tagline: 'Short Catchy Tagline',
+        productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
+    },
+    {
+        productName:'Chairs6',
         imgSource : cha['4.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
         productDescription : 'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Chairs',
+        productName:'Chairs7',
         imgSource : cha['5.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
         productDescription : 'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Chairs',
+        productName:'Chairs8',
         imgSource : cha['6.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
@@ -158,27 +186,41 @@ const shoes = [
     },
     {
         productName:'Shoes3',
-        imgSource : sho['3.jpg'],
+        imgSource : sho['4.jpg'],
         productValue : '5.99$',
         tagline: 'Short Catchy Tagline',
         productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
         productName:'Shoes4',
+        imgSource : sho['5.jpg'],
+        productValue : '5.99$',
+        tagline: 'Short Catchy Tagline',
+        productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
+    },
+    {
+        productName:'Shoes5',
+        imgSource : sho['3.jpg'],
+        productValue : '5.99$',
+        tagline: 'Short Catchy Tagline',
+        productDescription :  'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
+    },
+    {
+        productName:'Shoes6',
         imgSource : sho['4.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
         productDescription : 'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Shoes4',
+        productName:'Shoes7',
         imgSource : sho['5.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',
         productDescription : 'footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function.'
     },
     {
-        productName:'Shoes5',
+        productName:'Shoes8',
         imgSource : sho['6.jpg'],
         tagline: 'Short Catchy Tagline',
         productValue : '5.99$',

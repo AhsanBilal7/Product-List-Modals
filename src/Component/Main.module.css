@@ -44,3 +44,25 @@ transition: all 0.3s ease-in-out;
     color: white;
     /* display: none; */
 }
+    .cartBtn:hover{
+      background-color: red;
+      color: white;
+      border-radius: 5px;
+    }
+    .cartBtn{
+      padding: 5px 10px;
+      border: none;
+background-color: white;
+padding: 5px 10px;
+background-color: rgb(243, 243, 243);
+/* border-bottom: 1px solid red; */
+border-radius: 2px;
+font-weight: 600;
+transition: all 0.3s ease-in-out;
+    }
+    .buttonContainer{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+    }

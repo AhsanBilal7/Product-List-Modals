@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import navbar from "./Navbar.module.css";
+import { Link } from "react-router-dom";
+
 import {
   MDBNavbar,
   MDBContainer,
@@ -35,9 +37,12 @@ export default function Navbar() {
           <MDBCollapse navbar show={showNavNoTogglerThird}>
             <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page" href="/main">
+                {/* <MDBNavbarLink active aria-current="page" href=>
                   Home
-                </MDBNavbarLink>
+                </MDBNavbarLink> */}
+                <Link to={"/main"} >
+                  <p style={{margin:"0px" ,paddingTop:"5px" }}>Home</p>
+                </Link>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink

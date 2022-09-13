@@ -4,6 +4,7 @@ import { GiCrossedBones } from "react-icons/gi";
 import { useParams } from "react-router-dom";
 import { chairs, shoes, tables } from "../../Information/Information";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 // import imgShoes from '../../pictures/1.jpg'
 
 const { useState } = React;
@@ -27,7 +28,7 @@ function ProfileCard() {
 
   const { imgSource, productName, productValue, productDescription } =
     showArray[id];
-  console.log(showArray[id]);
+  // console.log(showArray[id]);
 
   // const setModalFlag = props.setModalFlag
   const [isActive, setIsActive] = useState(false);
@@ -67,14 +68,14 @@ function ProfileCard() {
               <span></span>
               <span></span>
             </div>
-            <a href="/main">
+            <Link to={"/main"}>
               {" "}
               <small>
                 <i className={`fa ${heart ? "fa-heart-o" : "fa-heart"}`}>
                   <GiCrossedBones />
                 </i>
               </small>
-            </a>
+            </Link>
           </div>
           <div className="image">
             <img src={imgSource} />
